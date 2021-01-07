@@ -5,7 +5,7 @@ Eslint plugin to disallow checking for NaN by self comparison
 In ES5 you can check for `NaN` values by using the `Number.isNaN` method or you can compare a variable to itself `value !== value`.
 The latter method is equivalent to the former but much less readable.
 
-Examples of incorrect code for this rule
+Examples of incorrect code for rule `prefer-number-isnan`
 
 ```
 const fooIsNaN = foo !== foo;
@@ -15,7 +15,7 @@ const fooIsNotNaN = foo === foo;
 const alwaysFalse = NaN == NaN;
 ```
 
-Examples of correct code for this rule
+Examples of correct code for rule `prefer-number-isnan`
 
 ```
 const fooIsNaN = Number.isNaN(foo);
